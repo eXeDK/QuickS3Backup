@@ -1,5 +1,22 @@
 {
+    "name": "ThomasStig/quick-s3backup",
+    "description": "Create backup of your server to S3 quick and easy!",
+    "authors": [
+        {
+            "name": "Thomas Stig Jacobsen",
+            "email": "thomas@kadoo.dk"
+        }
+    ],
+    "minimum-stability": "dev",
     "require": {
         "aws/aws-sdk-php": "2.*"
+    },
+    "require-dev": {
+        "aws/aws-sdk-php": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "QuickS3Backup": "src/"
+        }
     }
 }
