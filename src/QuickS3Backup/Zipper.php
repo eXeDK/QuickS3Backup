@@ -14,7 +14,7 @@
 		 * @return string           Returns the $dumpPath
 		 */
 		public static function zip($content, $dumpPath) {
-			var_dump(exec('zip -r -9 ' . $dumpPath . '  ' . $content));
+			exec('zip -r -9 ' . $dumpPath . '  ' . $content);
 
 			return $dumpPath;
 		}
