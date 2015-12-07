@@ -27,6 +27,20 @@
 		}
 
 		/**
+		 * @param string $bucket        Name of the bucket to create the folder in
+		 * @param string $folderPath    Path of the folder to create
+		 *
+		 * @return \Guzzle\Service\Resource\Model
+		 */
+		public function createFolder($bucket, $folderPath) {
+			return $this->s3->putObject(array(
+				'Bucket' => $bucket,
+				'Key' => $folderPath . '/',
+				'Body' => ''
+			));
+		}
+
+		/**
 		 * Upload a single file to S3
 		 *
 		 * @param string $bucket     Name of the bucket to upload to
